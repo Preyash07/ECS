@@ -116,7 +116,7 @@
       "@type": "Person",
       "@id": "https://www.endoracreatives.com/#team",
       "name": "Endora Team",
-      "description": "A talented team of 12 creative professionals working across 6 time zones to deliver exceptional results.",
+      "description": "A talented team of 4 creative professionals working across 7 time zones to deliver exceptional results.",
       "worksFor": {
         "@id": "https://endoracreatives.com/#localbusiness"
       },
