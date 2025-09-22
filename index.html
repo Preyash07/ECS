@@ -69,12 +69,43 @@
             </a>
           </div>
 
-          <button class="md:hidden inline-flex items-center justify-center rounded-md h-10 w-10 outline outline-1 outline-white/10 hover:outline-white/20 hover:bg-white/5 transition-colors" aria-label="Menu">
-            <i data-lucide="menu" stroke-width="1.5" class="w-5 h-5"></i>
+          <button id="mobileMenuButton" class="md:hidden inline-flex items-center justify-center rounded-md h-10 w-10 outline outline-1 outline-white/10 hover:outline-white/20 hover:bg-white/5 transition-colors" aria-label="Menu">
+            <i id="mobileMenuIcon" data-lucide="menu" stroke-width="1.5" class="w-5 h-5"></i>
           </button>
         </div>
       </div>
       <div class="border-t border-white/10"></div>
+      
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="md:hidden fixed inset-0 z-40 bg-[#0b0e13]/95 backdrop-blur-md transform translate-x-full transition-transform duration-300 ease-in-out">
+        <div class="flex flex-col h-full">
+          <div class="px-6 py-4 flex items-center justify-between border-b border-white/10">
+            <a href="#home" class="inline-flex items-center">
+              <img src="ECSLOGOWBG.png" alt="Endora Creatives Logo" class="w-12 h-12 object-contain">
+            </a>
+            <button id="closeMenuButton" class="inline-flex items-center justify-center rounded-md h-10 w-10 outline outline-1 outline-white/10 hover:outline-white/20 hover:bg-white/5 transition-colors" aria-label="Close Menu">
+              <i data-lucide="x" stroke-width="1.5" class="w-5 h-5"></i>
+            </button>
+          </div>
+          <nav class="flex flex-col px-6 py-8 gap-6">
+            <a href="#work" class="text-lg font-medium text-slate-300 hover:text-white transition-colors py-2 border-b border-white/5">Work</a>
+            <a href="#services" class="text-lg font-medium text-slate-300 hover:text-white transition-colors py-2 border-b border-white/5">Services</a>
+            <a href="#about" class="text-lg font-medium text-slate-300 hover:text-white transition-colors py-2 border-b border-white/5">About</a>
+            <a href="#blog" class="text-lg font-medium text-slate-300 hover:text-white transition-colors py-2 border-b border-white/5">Blog</a>
+            <a href="#contact" class="text-lg font-medium text-slate-300 hover:text-white transition-colors py-2 border-b border-white/5">Contact</a>
+          </nav>
+          <div class="mt-auto p-6 border-t border-white/10 space-y-4">
+            <a href="#contact" class="inline-flex items-center justify-center gap-2 w-full rounded-md px-6 py-3 text-base font-medium text-white outline outline-1 outline-white/10 hover:outline-white/20 hover:bg-white/5 transition-colors">
+              <i data-lucide="mail" stroke-width="1.5" class="w-4 h-4"></i>
+              Get in touch
+            </a>
+            <a href="#work" class="inline-flex items-center justify-center gap-2 w-full rounded-md px-6 py-3 text-base font-medium text-slate-900 bg-white hover:bg-slate-100 transition-colors">
+              <i data-lucide="sparkles" stroke-width="1.5" class="w-4 h-4"></i>
+              Our work
+            </a>
+          </div>
+        </div>
+      </div>
     </header>
 
     <!-- Hero -->
@@ -841,6 +872,45 @@
     <script>
       // Initialize Lucide icons
       lucide.createIcons();
+
+      // Mobile menu functionality
+      const mobileMenuButton = document.getElementById('mobileMenuButton');
+      const closeMenuButton = document.getElementById('closeMenuButton');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const mobileMenuIcon = document.getElementById('mobileMenuIcon');
+      const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+
+      // Toggle mobile menu
+      function toggleMobileMenu() {
+        if (mobileMenu.classList.contains('translate-x-full')) {
+          // Open menu
+          mobileMenu.classList.remove('translate-x-full');
+          mobileMenu.classList.add('translate-x-0');
+          mobileMenuIcon.setAttribute('data-lucide', 'x');
+          document.body.style.overflow = 'hidden'; // Prevent scrolling
+        } else {
+          // Close menu
+          mobileMenu.classList.remove('translate-x-0');
+          mobileMenu.classList.add('translate-x-full');
+          mobileMenuIcon.setAttribute('data-lucide', 'menu');
+          document.body.style.overflow = ''; // Re-enable scrolling
+        }
+        // Re-initialize Lucide icons
+        lucide.createIcons();
+      }
+
+      // Event listeners
+      mobileMenuButton.addEventListener('click', toggleMobileMenu);
+      closeMenuButton.addEventListener('click', toggleMobileMenu);
+
+      // Close menu when clicking on a link
+      mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          if (!mobileMenu.classList.contains('translate-x-full')) {
+            toggleMobileMenu();
+          }
+        });
+      });
 
       // Year
       document.getElementById('y').textContent = new Date().getFullYear();
