@@ -1,0 +1,239 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://www.endoracreatives.com/#localbusiness",
+      "name": "Endora Creatives",
+      "description": "Ahmedabad's best creative and marketing agency providing top results with talented people and AI-powered solutions. We also help businesses with AI automation services.",
+      "url": "https://www.endoracreatives.com",
+      "telephone": "+91 70436 86169",
+      "email": "info@endoracreatives.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "322, Money Plant High Street, Jagatpur Road, S.G Highway",
+        "addressLocality": "Ahmedabad",
+        "addressRegion": "Gujarat",
+        "postalCode": "382470",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 23.045363,
+        "longitude": 72.530569
+      },
+      "openingHours": ["Mo-Fr 10:00-19:00"],
+      "image": "https://endoracreatives.com/ECSLOGOWBG.png",
+      "logo": "https://endoracreatives.com/ECSLOGOWBG.png",
+      "priceRange": "$$$",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "100+",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/endoracreatives",
+        "https://twitter.com/endoracreatives",
+        "https://www.instagram.com/endoracreatives",
+        "https://www.facebook.com/endoracreatives",
+        "https://www.youtube.com/endoracreatives",
+        "https://dribbble.com/endoracreatives",
+        "https://www.behance.net/endoracreatives"
+      ],
+      "hasMap": "https://maps.google.com/?q=Endora+Creatives,Ahmedabad",
+      "currenciesAccepted": "INR, USD",
+      "paymentAccepted": "Credit card, PayPal, Bank transfer",
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Ahmedabad"
+      },
+      "category": "Creative Agency, Marketing Agency, Digital Agency",
+      "keywords": "best creative agency Ahmedabad, top marketing agency Ahmedabad, talented team, AI automation services, AI-powered solutions, brand identity, web design, digital marketing, motion design"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.endoracreatives.com/#website",
+      "url": "https://www.endoracreatives.com",
+      "name": "Endora Creatives",
+      "description": "Ahmedabad's best creative and marketing agency specializing in brand identity, web design, and AI automation solutions.",
+      "publisher": {
+        "@id": "https://endoracreatives.com/#localbusiness"
+      },
+      "inLanguage": "en",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.endoracreatives.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.endoracreatives.com/#service-branding",
+      "name": "Brand Identity",
+      "description": "Comprehensive brand strategy, naming, visual identity, and guidelines to create memorable brand experiences.",
+      "provider": {
+        "@id": "https://endoracreatives.com/#localbusiness"
+      },
+      "category": "Branding",
+      "serviceType": "Brand Strategy, Visual Identity, Naming, Brand Guidelines"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.endoracreatives.com/#service-motion",
+      "name": "Motion & Content",
+      "description": "Compelling product showreels, social media content, and motion graphics to bring brands to life.",
+      "provider": {
+        "@id": "https://endoracreatives.com/#localbusiness"
+      },
+      "category": "Motion Design",
+      "serviceType": "Product Showreels, Social Media Content, Motion Graphics, Animation"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.endoracreatives.com/#service-web",
+      "name": "Web & Product",
+      "description": "Design systems, website design and development, UX/UI design, and e-commerce solutions for digital products.",
+      "provider": {
+        "@id": "https://endoracreatives.com/#localbusiness"
+      },
+      "category": "Web Design",
+      "serviceType": "Design Systems, Website Design, Development, UX/UI Design, E-commerce Solutions"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.endoracreatives.com/#service-ai",
+      "name": "AI Automation Services",
+      "description": "AI-powered solutions to automate business processes, enhance customer experiences, and drive growth.",
+      "provider": {
+        "@id": "https://endoracreatives.com/#localbusiness"
+      },
+      "category": "AI Solutions",
+      "serviceType": "AI Automation, Chatbots, Data Analysis, Personalization"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.endoracreatives.com/#team",
+      "name": "Endora Team",
+      "description": "A talented team of 12 creative professionals working across 6 time zones to deliver exceptional results.",
+      "worksFor": {
+        "@id": "https://endoracreatives.com/#localbusiness"
+      },
+      "jobTitle": "Designers, Developers, Strategists, Motion Artists",
+      "sameAs": "https://www.endoracreatives.com/index.html#about"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.endoracreatives.com/index.html",
+      "url": "https://www.endoracreatives.com/index.html",
+      "name": "Home | Endora Creatives Ahmedabad",
+      "description": "Ahmedabad's best creative and marketing agency specializing in brand identity, web design, and AI automation solutions.",
+      "isPartOf": {
+        "@id": "https://endoracreatives.com/#website"
+      },
+      "about": {
+        "@id": "https://endoracreatives.com/#localbusiness"
+      },
+      "primaryImageOfPage": "https://endoracreatives.com/ECSLOGOWBG.png",
+      "datePublished": "2024-01-01",
+      "dateModified": "2024-12-15",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.endoracreatives.com/blogs.html",
+      "url": "https://www.endoracreatives.com/blogs.html",
+      "name": "Digital Marketing & Creative Blog | Endora Creatives Ahmedabad",
+      "description": "Insights on brand identity, design systems, motion strategy, and AI-powered solutions from Ahmedabad's top creative and marketing agency.",
+      "isPartOf": {
+        "@id": "https://endoracreatives.com/#website"
+      },
+      "about": {
+        "@id": "https://endoracreatives.com/#localbusiness"
+      },
+      "primaryImageOfPage": "https://endoracreatives.com/ECSLOGOWBG.png",
+      "datePublished": "2024-01-01",
+      "dateModified": "2024-12-15",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://www.endoracreatives.com/blog-brand-identity.html",
+      "url": "https://www.endoracreatives.com/blog-brand-identity.html",
+      "name": "The Future of Brand Identity in Digital Spaces | Endora Creatives Ahmedabad",
+      "description": "Discover how brand identity is evolving in digital spaces and learn how AI-powered solutions from Ahmedabad's top creative agency can transform your brand.",
+      "isPartOf": {
+        "@id": "https://endoracreatives.com/blogs.html"
+      },
+      "author": {
+        "@id": "https://endoracreatives.com/#localbusiness"
+      },
+      "publisher": {
+        "@id": "https://endoracreatives.com/#localbusiness"
+      },
+      "headline": "The Future of Brand Identity in Digital Spaces",
+      "articleBody": "Exploring how digital transformation is reshaping brand identity and what it means for creative agencies in 2024.",
+      "datePublished": "2024-12-15",
+      "dateModified": "2024-12-15",
+      "image": "https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=1200&auto=format&fit=crop",
+      "inLanguage": "en",
+      "keywords": ["brand identity", "digital branding", "AI in branding", "creative agency Ahmedabad", "brand evolution"],
+      "mainEntityOfPage": {
+        "@id": "https://endoracreatives.com/blog-brand-identity.html"
+      }
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://www.endoracreatives.com/blog-design-systems.html",
+      "url": "https://www.endoracreatives.com/blog-design-systems.html",
+      "name": "Building Scalable Design Systems | Endora Creatives Ahmedabad",
+      "description": "Ahmedabad's best creative agency shares insights on building scalable design systems with our talented team powered by AI.",
+      "isPartOf": {
+        "@id": "https://www.endoracreatives.com/blogs.html"
+      },
+      "author": {
+        "@id": "https://www.endoracreatives.com/#localbusiness"
+      },
+      "publisher": {
+        "@id": "https://www.endoracreatives.com/#localbusiness"
+      },
+      "headline": "Building Scalable Design Systems",
+      "articleBody": "A comprehensive guide to creating design systems that grow with your team and product, powered by AI.",
+      "datePublished": "2024-12-15",
+      "dateModified": "2024-12-15",
+      "image": "https://images.unsplash.com/photo-1517292987719-0369a794ec0f?q=80&w=1200&auto=format&fit=crop",
+      "inLanguage": "en",
+      "keywords": ["design systems", "scalable design", "AI in design", "best creative agency Ahmedabad", "talented team"],
+      "mainEntityOfPage": {
+        "@id": "https://www.endoracreatives.com/blog-design-systems.html"
+      }
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://www.endoracreatives.com/blog-motion-strategy.html",
+      "url": "https://www.endoracreatives.com/blog-motion-strategy.html",
+      "name": "Why Every Brand Needs a Motion Strategy | Endora Creatives Ahmedabad",
+      "description": "Ahmedabad's top marketing agency explains why every brand needs a motion strategy, powered by our talented team and AI solutions.",
+      "isPartOf": {
+        "@id": "https://www.endoracreatives.com/blogs.html"
+      },
+      "author": {
+        "@id": "https://www.endoracreatives.com/#localbusiness"
+      },
+      "publisher": {
+        "@id": "https://www.endoracreatives.com/#localbusiness"
+      },
+      "headline": "Why Every Brand Needs a Motion Strategy",
+      "articleBody": "How motion design can transform user engagement and brand perception in digital experiences, enhanced by AI.",
+      "datePublished": "2024-12-15",
+      "dateModified": "2024-12-15",
+      "image": "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=1200&auto=format&fit=crop",
+      "inLanguage": "en",
+      "keywords": ["motion strategy", "brand motion", "AI in motion design", "best marketing agency Ahmedabad", "AI automation services"],
+      "mainEntityOfPage": {
+        "@id": "https://www.endoracreatives.com/blog-motion-strategy.html"
+      }
+    }
+  ]
+}

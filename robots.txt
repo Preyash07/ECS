@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: 
+
+# Allow all crawlers to access all content
+Sitemap: https://www.endoracreatives.com/sitemap.xml
+
+# Optional: Rate limiting to prevent server overload
+Crawl-delay: 5
